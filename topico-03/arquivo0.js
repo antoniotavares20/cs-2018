@@ -11,7 +11,6 @@ let maioridade = idade >= 18;
  * @param {string} author - Antonio Tavares.
  * @param {string} teacher - Fábio Nogueira.
  */
-
 function log(title, author,teacher) {
     console.log(title, author,teacher)
 }

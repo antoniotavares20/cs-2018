@@ -6,7 +6,7 @@ function falso() {
 
 function verdadeiro() {
     console.log("verdadeiro");
-    return true;
+    return false;
 }
 
 console.log(verdadeiro() || falso());

@@ -9,7 +9,6 @@ function fatorial(n){
     while (contador <= n){
         contador = produto*contador;
         produto = produto+1;
-
     }
     return produto;
 }
