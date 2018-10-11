@@ -4,7 +4,6 @@ function soma(x,y){
 }
 module.exports.soma = soma;
 
-function subtracao(x,y){
-    return x-y+1;
-}
+function subtracao(x,y){ls
+    
 module.exports.subtracao = subtracao;
