@@ -10,6 +10,7 @@ function fatorial(n){
         contador = produto*contador;
         produto = produto+1;
     }
+    
     return produto;
 }
 console.log(fatorial(4));

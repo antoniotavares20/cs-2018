@@ -8,8 +8,7 @@ function fatorial(n) {
      while (n < 2) {
        produto = produto * n;
        n = n - 1;
-     }
-     
+     }     
      return produto;
  }
  
