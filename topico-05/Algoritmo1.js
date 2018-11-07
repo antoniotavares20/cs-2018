@@ -9,5 +9,7 @@ function propriedade3025(abcd) {
     return (ab + cd) * (ab + cd) == abcd;
 }
 
-let doisPrimeirosDigitos = x => Math.trunc(n / 100);
-let doisUltimosDigitos = x => n % 100;
+let doisPrimeirosDigitos = abcd => Math.trunc(abcd / 100);
+let doisUltimosDigitos = abcd => abcd % 100;
+
+exports.propriedade3025 = propriedade3025;

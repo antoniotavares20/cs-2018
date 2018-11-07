@@ -1,0 +1,17 @@
+{
+  "name": "topico-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Algoritimo1.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
