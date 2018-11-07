@@ -1,21 +1,13 @@
 //propiedade 3025
 
-let n = 3025;
-let x = propiedadeX(n);
-let y = propiedadeY(n);
+function propriedade3025(abcd) {
+    // se nao satisfaz exigencia gera excecao
 
-if( (x+y) == Math.sqrt(n)){
-    console.log(`é verdadeiro que o numero ${n} atende a propiedade, pois ${x} + ${y} ^2
-=  ${(x+y)^2}  e ${x} +${y} = ${x+y}`);
-}else{
-    console.log("o numero não atende a propiedade")
+    let ab = doisPrimeirosDigitos(abcd);
+    let cd = doisUltimosDigitos(abcd);
+
+    return (ab + cd) * (ab + cd) == abcd;
 }
-function propiedadeX(n){
-    let x = n/100;
-    x = Math.trunc(x);
-     return x; 
-}
-function propiedadeY(n){
-     let y = n%100;
-    return y;
-}
+
+let doisPrimeirosDigitos = x => Math.trunc(n / 100);
+let doisUltimosDigitos = x => n % 100;
