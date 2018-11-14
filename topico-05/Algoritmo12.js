@@ -5,20 +5,20 @@
  * quadrado perfeito
  */
 
- var quadradoPerefeito = (numeroN)=>{
-   var somatorio = 1;
-   var indice = 1;
-    if(numeroN<1){
+var quadradoPerefeito = (numeroN) => {
+    var somatorio = 1;
+    var indice = 1;
+    if (numeroN < 1) {
         return false;
-    }else{
-        while(somatorio<numeroN){
+    } else {
+        while (somatorio < numeroN) {
             indice = indice + 2;
-            somatorio = somatorio + indice; 
+            somatorio = somatorio + indice;
         }
     }
-    if(somatorio == numeroN){
+    if (somatorio == numeroN) {
         return true;
     }
     return false;
- }
- module.exports.quadradoPerefeito =  quadradoPerefeito;
+}
+module.exports.quadradoPerefeito = quadradoPerefeito;

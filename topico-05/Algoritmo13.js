@@ -5,16 +5,16 @@
  * @param {int} iteracoes - para o valor de iterações desejado;
  */
 
-var raiz = (valorDesejado, iteracoes)=>{
+var raiz = (valorDesejado, iteracoes) => {
     var raiz = 1;
-    if(valorDesejado <= 0){
+    if (valorDesejado <= 0) {
         return false;
-    }else{
-        while(0 <= iteracoes){
-            raiz = (raiz+(valorDesejado/raiz))/2;
-            iteracoes--; 
-    }   
-    return raiz;
-}    
+    } else {
+        while (0 <= iteracoes) {
+            raiz = (raiz + (valorDesejado / raiz)) / 2;
+            iteracoes--;
+        }
+        return raiz;
+    }
 }
 module.exports.raiz = raiz;
