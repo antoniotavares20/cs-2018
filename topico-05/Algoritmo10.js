@@ -4,6 +4,7 @@
  * @param {int} k total de elementos
  */
 var potencia = (n, k) => {
+<<<<<<< HEAD
   var e = n + 1;
   var i = 2;
   var numerador = n;
@@ -21,4 +22,23 @@ var potencia = (n, k) => {
   }
   return e;
 };
+=======
+    var e = n + 1;
+    var i = 2;
+    var numerador = n;
+    var denominador = 1;
+
+    if (n < 1 || k < 2) {
+        return false;
+    } else {
+        while (i <= k) {
+            numerador = numerador * numerador;
+            denominador = denominador * i;
+            e = e + numerador / denominador;
+            i = i + 1;
+        }
+
+    } return e;
+}
+>>>>>>> master
 module.exports.potencia;
