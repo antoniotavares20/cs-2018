@@ -4,18 +4,18 @@
  * @returns{int} fatorial do numero natural
  * */
 
- var fatorial = function(numeroNatural){
-    if(numeroNatural<=1){
-         return false;
-     }else{
-       var indice = 2;
-       var fatorial = 1;
-       while(indice <= numeroNatural){
-           fatorial = fatorial * indice;
-           indice++;
-        }
-        return fatorial
+var fatorial = function(numeroNatural) {
+  if (numeroNatural <= 1) {
+    return false;
+  } else {
+    var indice = 2;
+    var fatorial = 1;
+    while (indice <= numeroNatural) {
+      fatorial = fatorial * indice;
+      indice++;
     }
-}
- 
- module.exports.fatorial = fatorial;
+    return fatorial;
+  }
+};
+
+module.exports.fatorial = fatorial;
