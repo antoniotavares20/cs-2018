@@ -4,5 +4,5 @@ const cpf = require('../Algoritmo19');
  */
 
 test("Verificando paramentos do CPF", () => {
-    expect(cpf.cpf(null)).toBe(false);
+    expect(cpf.cpf([null])).toBe(false);
 });
