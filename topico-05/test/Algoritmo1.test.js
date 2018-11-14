@@ -1,4 +1,9 @@
+
 const propriedade3025 = require("../Algoritmo1");
+/**Esta função faz o teste da função do Algoritmo1,da propriedade3025
+ * @param {propriedade3025(numero)} o teste verifica se a função traz
+ * faz uso a propriedade3025.
+ */
 
 test("3025 ok", ()=>{
     expect(propriedade3025.propriedade3025(3025)).toBe(true);

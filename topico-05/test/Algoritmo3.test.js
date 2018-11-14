@@ -1,5 +1,7 @@
 const diaDaSemana = require("../Algoritmo3");
-
+/**Esta função faz o teste do Algoritmo3
+ * 
+ */
 test("11/11/2018 = 4", () => {
     expect(diaDaSemana.diaDaSemana(12, 11, 2018)).toBe(0);
 })

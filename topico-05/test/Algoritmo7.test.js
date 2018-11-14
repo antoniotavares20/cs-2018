@@ -1,5 +1,7 @@
-var produtoDeInt = require("../Algoritmo7");
-
+const produtoDeInt = require("../Algoritmo7");
+/**Esta função faz o teste do Algoritmo7
+ * 
+ */
 test("A = 0 retorno = falso", () => {
     expect(produtoDeInt.totalParcelas(0, 1)).toBe(false);
 })

@@ -1,5 +1,7 @@
-var fibonacci = require('../Algoritmo18');
-
+const fibonacci = require('../Algoritmo18');
+/**Esta função faz o teste do Algoritmo18
+ * 
+ */
 test("testando paramentro < 1", () => {
     expect(fibonacci.fibonacci(0)).toBe(false);
 });

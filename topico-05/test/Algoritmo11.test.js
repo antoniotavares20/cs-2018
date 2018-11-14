@@ -1,5 +1,9 @@
-var razaoAurea = require("../Algoritmo11");
-
+const razaoAurea = require("../Algoritmo11");
+/**Estes testes verificam a razão aurea de um determinado valor 
+ * da função do Algoritmo113
+ * @param {razaoAurea(numero,numero,numero)} 
+ * onde os paramentros retornam a razao aurea 
+ */
 test("validacao com sequencia simples", () => {
     expect(razaoAurea.razaoAurea(0, 1, 0)).toBe(false);
 })

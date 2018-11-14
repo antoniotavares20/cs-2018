@@ -4,7 +4,7 @@
  * @returns{int} fatorial do numero natural
  * */
 
-var fatorial = function(numeroNatural) {
+var fatorial = function (numeroNatural) {
   if (numeroNatural <= 1) {
     return false;
   } else {

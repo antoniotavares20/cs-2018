@@ -5,7 +5,7 @@
  * @param{int} expoente- numero inteiro maior que zero
  */
 
-produto = function(base, expoente) {
+produto = function (base, expoente) {
   var indice = 1;
   var total = 1;
   if (base <= 0 || expoente <= 0) {

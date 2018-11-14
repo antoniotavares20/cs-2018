@@ -1,5 +1,7 @@
-var restoDaDivisao = require("../Algoritmo4");
-
+const restoDaDivisao = require("../Algoritmo4");
+/**Esta função faz o teste do Algoritmo4
+ * 
+ */
 test("5%3 é 2 ok", () => {
     expect(restoDaDivisao.restoDaDivisao(5, 3)).toBe(2);
 })

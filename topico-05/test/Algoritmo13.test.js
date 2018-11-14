@@ -1,7 +1,8 @@
-var raiz = require("../Algoritmo13");
+const raiz = require("../Algoritmo13");
 
-
-
+/**Este teste realiza a verificação da raiz da função do Algoritmo13
+ * @param {raiz(valor, n)} sendo "valor" a raiz desejada e "n" a precisão 
+ */
 test("É Verdadeiro que é falso caso o valor desejado <1 ", () => {
     expect(raiz.raiz(0, 5)).toBe(false);
 })
@@ -13,7 +14,6 @@ test("Raiz de 16 : Precisão de: 5", () => {
 test("Raiz de 25 : Precisão de: 5 ", () => {
     expect(raiz.raiz(25, 6)).toBe(5);
 })
-
 
 test("Raiz de 81 : Precisão de:7 ", () => {
     expect(raiz.raiz(81, 200)).toBe(9);

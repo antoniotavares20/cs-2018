@@ -1,5 +1,7 @@
-var mdc = require("../Algoritmo16");
-
+const mdc = require("../Algoritmo16");
+/**Esta função faz a verifica da função do Algoritmo16
+ * @param {mdc(x,y)} sendo x o primeiro valor e y o segundo valor
+*/
 
 test("verficação de A", () => {
     expect(mdc.mdc(0, 1)).toBe(false);

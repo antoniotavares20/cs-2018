@@ -7,7 +7,7 @@
  *
  *
  */
-var totalParcelas = function(totalParcelas, parcela) {
+var totalParcelas = function (totalParcelas, parcela) {
   var indice = 1;
   var somatorio = 0;
   if (totalParcelas <= 0 || parcela <= 0) {

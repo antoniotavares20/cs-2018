@@ -1,7 +1,9 @@
 
 
-var logaritimoNatural = require("../Algoritmo10.js");
-
+const logaritimoNatural = require("../Algoritmo10.js");
+/**Estes testes verificam o logaritmo natural da função 
+ * contida em Algoritmo10.
+*/
 
 test("Valor da potencia invialido", () => {
     expect(0).toBe(0);

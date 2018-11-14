@@ -1,8 +1,8 @@
 /**Esta função retorna o crivo de Aristoteles, a partir da eliminação dos numeros primos
  * e a soma dos demais numeros da sequencia dada.
  * @constructor
- * @param {int} a 
- * @param {int} n 
+ * @param {int} a numero inteiro primo a ser eliminado no crivo
+ * @param {int} n numeros que existem na sequencia
  */
 var crivoEratosten = (a, n)=>{
     var i = 2;

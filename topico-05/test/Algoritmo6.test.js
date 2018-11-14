@@ -1,5 +1,7 @@
-var fatorial = require("../Algoritmo6");
-
+const fatorial = require("../Algoritmo6");
+/**Esta função faz o teste do Algoritmo6
+ * 
+ */
 test("2!", () => {
     expect(fatorial.fatorial(2)).toBe(2);
 });

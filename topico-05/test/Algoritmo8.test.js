@@ -1,4 +1,4 @@
-produto = require("../Algoritmo8");
+const produto = require("../Algoritmo8");
 /**POTÊNCIA USANDO SOMAS
  * Realização do texte com a base e seu expoente
  */
