@@ -1,0 +1,18 @@
+{
+  "name": "topico-08",
+  "version": "1.0.0",
+  "description": "Pratica de construção de software",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "antoniotavares20@github.com"
+  },
+  "keywords": [
+    "cs-2018"
+  ],
+  "author": "Antonio Tavares",
+  "license": "ISC"
+}
