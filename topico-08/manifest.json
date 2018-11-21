@@ -1,0 +1,11 @@
+ {
+    "name": "Cronometro",
+    "version": "1.0",
+    "permissions": ["storage"],
+    "description": "Projeto CS-2018",
+    "manifest_version": 2,
+    "page_action": {
+    "default_popup": "cronometro.html"
+    }
+
+  }
