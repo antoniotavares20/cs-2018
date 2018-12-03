@@ -2,10 +2,10 @@
   "name": "**Cronometro**",
   "version": "1.0",
   "description": "Cronometro - Desing da disciplina de Cosntrução de Software",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "permissions": ["activeTab", "declarativeContent", "storage", "background", "tts" ],
   "options_page": "cronometro.html",
-  "cronometro": {
-    "scripts": ["model.js"],
+  "background": {
+    "scripts": ["background.js","model.js"],
     "persistent": false
   },
   "page_action": {
@@ -25,3 +25,4 @@
   },
   "manifest_version": 2
 }
+
