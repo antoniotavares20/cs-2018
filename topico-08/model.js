@@ -4,6 +4,7 @@ var minuto = 0;
 var segundo =  FREQUENCIA;
 var intervalo = {hora,minuto,segundo};
 
+
 function regrasTempo(intervalo) {
 	if (intervalo.segundo == 60) { 
 		intervalo.minuto ++; 
@@ -92,5 +93,5 @@ function regrasContagemRegressiva(){
 		}
 		intervalo.segundo --
 		return intervalo;
-	}
+}
 	
