@@ -1,10 +1,27 @@
-/**
- * 
- **/
+.link-normal {
+  background: #00F;
+  color: #FFF;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #000;
+}
 
-body {
-  font: bold 16px
-        'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  margin: 0;
-  overflow: hidden;
+.link-bloco {
+  display: block;
+  background: #00F;
+  color: #FFF;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+p {
+  white-space: nowrap;
+  }
+
+body{
+  background-color: #e3f2fd ;
+}
+.btn {
+  color:#01579b light-blue darken-4;
 }

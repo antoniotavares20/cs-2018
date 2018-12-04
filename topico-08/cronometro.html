@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Cronometro</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="stile.css" />
-</head>
-<body>
-    <h2>Cronometro</h2>
-    <h1>
-    <p id="hora"> : </p>
-    <p id="minuto"> : </p>
-    <p id="segundo"> : </p>
-    </h1>
-    <button id="iniciar">Iniciar</button>
-    <button id="parar">Parar </button>
-    <button id="limpar">Limpar</button>
-    <button id="retroceder">Retoceder</button>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+/>
+    <!-- Import materialize.css -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+
+        <nav>
+                <div class="nav-wrapper #bbdefb blue lighten-4">
+                  <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Cronometro</a>
+                </div>
+              </nav>
+
+    <div class="row">
+            <div class="col s12 m6 ">
+              <div class="card #bbdefb blue lighten-4">
+                <div class="card-content white-text">
+                    <h5>Tempo<h5>
+                         <div class="row push-s2">
+                             <h3>
+                                <div class="col s2"> <p class="z-depth-3 center" id="hora">--</p> </div>
+                                <div class="col s1">:</div>
+                                <div class="col s2">  <p class="z-depth-3 center" id="minuto">--</p>  </div>
+                                <div class="col s1">:</div>    
+                                <div class="col s2"> <p class="z-depth-3 center" id="segundo">--</p> </div>
+                            </h3>   
+                            </div>
+                <div class="card-action">
+                        <a class="waves-effect waves-light btn-small #01579b light-blue darken-4" id="iniciar"><i class="material-icons left">play_arrow</i>iniciar</a>   
+                        <a class="waves-effect waves-light btn-small #01579b light-blue darken-4" id="parar"><i class="material-icons left">stop</i>parar</a>   
+                        <a class="waves-effect waves-light btn-small #01579b light-blue darken-4" id="limpar"><i class="material-icons left">clear</i>limpar</a>   
+                <br>
+                <h5>Contegem Regressiva:<h5>
+                <a class="waves-effect waves-light btn-small #01579b light-blue darken-4" id="retroceder"><i class="material-icons left">keyboard_return</i>1:15</a>   
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    
+
+    </div>
     <script src="model.js"></script>
-</body>
+    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/menu.js">
+
+  </body>
 </html>

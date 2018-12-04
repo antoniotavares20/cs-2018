@@ -20,6 +20,8 @@ function regrasTempo(intervalo) {
 }
 
 function regrasContagemRegressiva() {
+	intervalo.hora = 1;
+	intervalo.minuto = 15;
   if (intervalo.minuto == 60) {
     intervalo.hora--;
     intervalo.segundo = 0;
@@ -68,6 +70,7 @@ function contagemRegressiva() {
 var tempo;
 function iniciar() {
   console.log("iniciar");
+  parar();
   tempo = setInterval(atualizarTempo, 1000);
 }
 
