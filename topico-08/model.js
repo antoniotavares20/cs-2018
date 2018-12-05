@@ -1,5 +1,5 @@
 /**Model */
-const FREQUENCIA = 15;
+const FREQUENCIA = 1;
 var hora = 0;
 var minuto = 0;
 var segundo = FREQUENCIA;
@@ -30,8 +30,8 @@ function regrasTempo() {
  * @param {void}
  **/
 function regrasContagemRegressiva() {
-  if(intervalo.segundo <= 0){
-    if(intervalo.segundo == 0){
+  if(intervalo.segundo <= 0 && intervalo.hora == 0 && intervalo.minuto == 0){
+    if(intervalo.segundo == 0 && intervalo.hora == 0 && intervalo.minuto == 0){
       parar();
   } 
   intervalo.segundo = 15;

@@ -2,5 +2,14 @@ language: node_js
 node_js:
   - "iojs"
   - "7"
+dist: trusty
 
-
+addons:
+  sonarcloud: 
+    organization: "sonarcloud_organization_key" # the key of the org you chose at step #3
+    token:
+      secure:  a1d55f5ce0eb69fb058355cc1921664726718295
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
+  
