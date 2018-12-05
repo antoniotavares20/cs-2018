@@ -4,7 +4,7 @@
   "description": "Cronograma da disciplina Construção de Software(UFG)",
   "main": "background.js",
   "scripts": {
-    "test": "vows --spec"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
