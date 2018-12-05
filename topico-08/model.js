@@ -1,5 +1,5 @@
 /**Model */
-const FREQUENCIA = -1;
+const FREQUENCIA = 15;
 var hora = 0;
 var minuto = 0;
 var segundo = FREQUENCIA;
@@ -12,7 +12,7 @@ var tempo;
  * para a hora, minuto e segundo
  * @param {object} intervalo = {hora, minuto, segundo} 
  */
-function regrasTempo(intervalo) {
+function regrasTempo() {
   if (intervalo.segundo == 60) {
     intervalo.minuto++;
     intervalo.segundo = 0;
@@ -30,17 +30,23 @@ function regrasTempo(intervalo) {
  * @param {void}
  **/
 function regrasContagemRegressiva() {
-	intervalo.hora = 0;
-  intervalo.minuto = 1;
+  if(intervalo.segundo <= 0){
+    if(intervalo.segundo == 0){
+      parar();
+  } 
+  intervalo.segundo = 15;
+ 
+}
+ 
 
   if (intervalo.minuto == 60) {
     intervalo.hora--;
     intervalo.segundo = 0;
     intervalo.minuto = 0;
   }
-  if (intervalo.segundo == 0) {
+  if (intervalo.segundo == 60) {
     intervalo.minuto--;
-    intervalo.segundo = 59;
+    intervalo.segundo = 0;
   }
   intervalo.segundo--;
   return intervalo;
@@ -108,8 +114,7 @@ function parar() {
 /**Esta função inverte a contagem do tempo*/
 function retroceder() {
   console.log("iniciar contagem regressiva");
-  parar(); 
-  limpar();	
+  parar();
   this.tempo = setInterval(contagemRegressiva, 1000);
 }
 /**esta função limpa os valores do cronmetro atual */
@@ -118,6 +123,9 @@ function limpar() {
   escreverTempo(this.intervalo);
 }
 
+function maisTempo(){
+  this.intervalo.segundo+=2;
+}
 /**Controler-io */
 /**As função abaixo, escultam os eventos da DOM e
  * execultam as funções de controle as elas vinculadas
@@ -147,5 +155,13 @@ window.addEventListener("load", function load(event) {
   var createButton = document.getElementById(["retroceder"]);
   createButton.addEventListener("click", function() {
     retroceder();
+  });
+});
+
+
+window.addEventListener("load", function load(event) {
+  var createButton = document.getElementById(["maistempo"]);
+  createButton.addEventListener("click", function() {
+    maisTempo();
   });
 });
